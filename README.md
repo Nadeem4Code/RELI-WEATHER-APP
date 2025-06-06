@@ -1,50 +1,56 @@
-# Welcome to your Expo app 👋
+# Weather App - Reli Frontend Assessment
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A weather application built with React Native and Expo that demonstrates clean UI implementation and thoughtful UX design.
 
-## Get started
+## Features
 
-1. Install dependencies
+- Current weather display for any city
+- Detailed weather information
+- Intuitive tab navigation
+- Responsive design for all screen sizes
+- Dark/light mode support
 
-   ```bash
-   npm install
-   ```
+## Technologies Used
 
-2. Start the app
+- React Native
+- Expo
+- TypeScript
+- Expo Router
+- React Navigation
+- Axios for API calls
+- date-fns for date formatting
 
-   ```bash
-   npx expo start
-   ```
+## Design Rationale
 
-In the output, you'll find options to open the app in a
+The app focuses on providing weather information in the most accessible way possible. Key design decisions:
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- Clear hierarchy of information (temperature as most prominent)
+- Consistent styling throughout
+- Immediate feedback for user actions
+- Thoughtful error handling
+- Accessibility considerations (contrast, text sizes)
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Usability Heuristics Focus
 
-## Get a fresh project
+The implementation pays special attention to:
 
-When you're ready, run:
+1. **Visibility of system status**: Loading states and error messages
+2. **Match between system and real world**: Weather icons match user expectations
+3. **User control and freedom**: Easy navigation between views
+4. **Consistency and standards**: Follows mobile UI conventions
+5. **Error prevention**: Input validation and helpful defaults
 
-```bash
-npm run reset-project
-```
+## How to Run
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Start the development server: `npx expo start`
+4. Scan the QR code with the Expo Go app or run on a simulator
 
-## Learn more
+## Building for iOS
 
-To learn more about developing your project with Expo, look at the following resources:
+To build for iOS:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+1. Install EAS CLI: `npm install -g eas-cli`
+2. Login: `eas login`
+3. Build: `eas build --platform ios`
