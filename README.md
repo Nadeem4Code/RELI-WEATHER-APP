@@ -17,7 +17,7 @@ A weather application built with React Native and Expo that demonstrates clean U
 - TypeScript
 - Expo Router
 - React Navigation
-- Axios for API calls
+- Fetch for API calls
 - date-fns for date formatting
 
 ## Design Rationale
